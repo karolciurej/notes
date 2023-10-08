@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.notesContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1080px;
+  gap:50px;
+}
+
+.noteItem{
+  background-color: #333;
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 260px;
+  display: grid;
+  width: calc( 24% + 5px);
+  grid-template-rows: 30px 1fr 30px;
+  padding: 30px;
+}
+
+.index{
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Lilita One', cursive;
+}
+
+.noteItem>button{
+  align-self: flex-end;
+  justify-self: end;
+  background:none;
+  border: none;
+  font-size: 17px;
+}
+
+.noteText{
+  padding: 5px;
+  font-size: 17px;
+  text-align: left;
+}
+
+.notesInput{
+  background-color: grey;
+  border-radius: 10px;
+  border: 1px solid #111;
+  height: 260px;
+  display: grid;
+  width: calc( 24% + 5px);
+  grid-template-rows: 1fr 30px;
+  padding: 30px;
+}
+
+.textInput{
+  background-color: grey;
+  border: none;
+  text-align: top;
+  color: black;
+  font-size: 17px;
+  resize: none;
+  padding: 10px;
+}
+
+.textInput::placeholder{
+  color: black;
+  font-size: 17px;
+}
+
+.notesInput button{
+  align-self: flex-end;
+  justify-self: end;
+  background:none;
+  border: none;
+
+  font-size: 17px;
+}
+
+.notesInput>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.search{
+  margin-bottom: 30px;
+  height: 35px;
+  width: calc(100% - 24px);
+  border-radius: 14px;
+  padding: 0 10px;
+  border: 2px solid grey;
+}
